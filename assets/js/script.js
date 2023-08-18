@@ -90,6 +90,89 @@ for (let i = 0; i < filterBtn.length; i++) {
 
 }
 
+// projects variables
+const projectItem = document.querySelectorAll("[data-project-item]");
+const modalContainer = document.querySelector("[data-modal-container]");
+const modalCloseBtn = document.querySelector("[data-modal-close-btn]");
+const overlay = document.querySelector("[data-overlay]");
+
+// modal variable
+const modalImg1 = document.querySelector("[data-modal-img-1]");
+const modalImg2 = document.querySelector("[data-modal-img-2]");
+const modalImg3 = document.querySelector("[data-modal-img-3]");
+const modalTech = document.querySelector("[data-modal-tech]");
+const modalTitle = document.querySelector("[data-modal-title]");
+const modalText = document.querySelector("[data-modal-text]");
+const modalLink = document.querySelector("[data-modal-link]");
+const modalBtnName = document.querySelector("[data-modal-btn-name]");
+
+// modal toggle function
+const projectModalFunc = function () {
+  modalContainer.classList.toggle("active");
+  overlay.classList.toggle("active");
+}
+
+
+// add click event to all modal items
+for (let i = 0; i < projectItem.length; i++) {
+
+  projectItem[i].addEventListener("click", function () {
+
+    modalImg1.src = this.querySelector("[data-project-image-1]").src;
+    modalImg1.alt = this.querySelector("[data-project-image-1]").alt
+    modalImg1.style = "display: block;";
+
+    let image2 = this.querySelector("[data-project-image-2]");
+    let image3 = this.querySelector("[data-project-image-3]");
+
+    if (image2) {
+      modalImg2.src = image2.src;
+      modalImg2.alt = image2.alt;
+      modalImg2.style = "display: block;";
+    }
+    else {
+      modalImg2.style = "display: none;";
+    }
+
+    if (image3) {
+      modalImg3.src = image3.src;
+      modalImg3.alt = image3.alt;
+      modalImg3.style = "display: block;";
+    }
+    else {
+      modalImg3.style = "display: none;";
+    }
+
+    modalTitle.innerHTML = this.querySelector("[data-project-title]").innerHTML;
+    modalTech.innerHTML = this.querySelector("[data-project-tech]").innerHTML;
+    modalText.innerHTML = this.querySelector("[data-project-details]").innerHTML;
+
+    let link = this.querySelector("[data-project-link]").innerHTML;
+    let btnLink = this.querySelector("[data-project-btn-name]").innerHTML;
+
+    if (btnLink === "Confidential") {
+      modalBtnName.innerHTML = btnLink;
+      modalBtnName.setAttribute('disabled', '');
+    } else if (btnLink === "Under Maintenance") {
+      modalBtnName.innerHTML = btnLink;
+      modalBtnName.setAttribute('disabled', '');
+    } else {
+      modalBtnName.innerHTML = "Live Demo";
+      modalBtnName.removeAttribute('disabled');
+      modalLink.action = link;
+    }
+
+    projectModalFunc();
+
+  });
+
+}
+
+// add click event to modal close button
+modalCloseBtn.addEventListener("click", projectModalFunc);
+overlay.addEventListener("click", projectModalFunc);
+
+
 
 
 // contact form variables
