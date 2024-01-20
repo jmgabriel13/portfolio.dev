@@ -1425,7 +1425,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .form-btn {
     width: max-content;
-    margin-left: auto;
+    /* margin-left: auto; */
   }
   
 }

@@ -105,6 +105,7 @@ const modalTitle = document.querySelector("[data-modal-title]");
 const modalText = document.querySelector("[data-modal-text]");
 const modalLink = document.querySelector("[data-modal-link]");
 const modalBtnName = document.querySelector("[data-modal-btn-name]");
+const modalBtnSourceCode = document.querySelector("[data-modal-btn-source-code]");
 
 // modal toggle function
 const projectModalFunc = function () {
@@ -149,14 +150,25 @@ for (let i = 0; i < projectItem.length; i++) {
 
     let link = this.querySelector("[data-project-link]").innerHTML;
     let btnLink = this.querySelector("[data-project-btn-name]").innerHTML;
+    let sourceCodeLink = this.querySelector("[data-project-btn-source-code]").innerHTML;
+    modalBtnSourceCode.innerHTML = "Source Code";
 
     if (btnLink === "Confidential") {
+      modalBtnSourceCode.setAttribute('disabled', '');
+      modalBtnSourceCode.removeAttribute("href");
+
       modalBtnName.innerHTML = btnLink;
       modalBtnName.setAttribute('disabled', '');
     } else if (btnLink === "Under Maintenance") {
+      modalBtnSourceCode.setAttribute('disabled', '');
+      modalBtnSourceCode.removeAttribute("href");
+
       modalBtnName.innerHTML = btnLink;
       modalBtnName.setAttribute('disabled', '');
     } else {
+      modalBtnSourceCode.removeAttribute('disabled');
+      modalBtnSourceCode.setAttribute("href", sourceCodeLink)
+
       modalBtnName.innerHTML = "Live Demo";
       modalBtnName.removeAttribute('disabled');
       modalLink.action = link;
