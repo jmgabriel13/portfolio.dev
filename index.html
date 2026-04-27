@@ -3,1172 +3,314 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JM Gabriel - FullStack Developer</title>
-
-  <!--
-    - favicon
-  -->
+  <meta name="description"
+    content="JM Gabriel is an AI-augmented .NET Full-Stack Developer building maintainable business systems, APIs, and engineering workflows.">
+  <meta name="author" content="JM Gabriel">
+  <meta property="og:title" content="JM Gabriel | AI-Augmented .NET Full-Stack Developer">
+  <meta property="og:description"
+    content="Maintainable .NET systems, full-stack business applications, and AI-assisted engineering workflows.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="./assets/images/jm-profile.jpg">
+  <title>JM Gabriel | AI-Augmented .NET Full-Stack Developer</title>
   <link rel="shortcut icon" href="./assets/images/j-logo-removebg-preview.png" type="image/x-icon">
-
-  <!--
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css"><!-- in your header -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-
-  <!--
-    - google font link
-  -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="JM Gabriel home">
+      <img src="./assets/images/j-logo-removebg-preview.png" alt="" width="34" height="34">
+      <span>JM Gabriel</span>
+    </a>
 
-  <!--
-    - #MAIN
-  -->
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span class="sr-only">Menu</span>
+    </button>
 
-  <main>
+    <nav class="site-nav" id="site-nav" data-site-nav>
+      <a href="#work">Work</a>
+      <a href="#ai-workflow">AI Workflow</a>
+      <a href="#strengths">Strengths</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-    <!--
-      - #SIDEBAR
-    -->
+  <main id="top">
+    <section class="hero section">
+      <div class="hero-copy">
+        <p class="eyebrow">AI-Augmented .NET Full-Stack Developer</p>
+        <h1>I build maintainable .NET business systems and AI-assisted engineering workflows.</h1>
+        <p class="hero-lede">
+          I work across C#, .NET, SQL, APIs, and frontend delivery, then use Codex and Claude Code workflows to make
+          planning, implementation, testing, review, and documentation more consistent.
+        </p>
 
-    <aside class="sidebar" data-sidebar>
-
-      <div class="sidebar-info">
-
-        <figure class="avatar-box">
-          <img src="./assets/images/jm-profile.jpg" alt="JM Gabriel" width="80">
-        </figure>
-
-        <div class="info-content">
-          <h1 class="name" title="JM Gabriel">JM Gabriel</h1>
-
-          <p class="title">Full-Stack Developer</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#work">View Work</a>
+          <a class="btn btn-secondary" href="./assets/cv/JMCV.pdf" target="_blank" rel="noopener">Download Resume</a>
         </div>
 
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-
+        <dl class="signal-grid" aria-label="Professional summary">
+          <div>
+            <dt>Core stack</dt>
+            <dd>C# / .NET / SQL</dd>
+          </div>
+          <div>
+            <dt>Delivery</dt>
+            <dd>APIs / Web apps / CI-ready workflows</dd>
+          </div>
+          <div>
+            <dt>AI edge</dt>
+            <dd>Codex / Claude Code / reusable skills</dd>
+          </div>
+        </dl>
       </div>
 
-      <div class="sidebar-info_more">
-
-        <div class="separator"></div>
-
-        <ul class="contacts-list">
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-
-              <a href="mailto:jmgabriel12.jg@gmail.com" class="contact-link">jmgabriel12.jg@gmail.com</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
-
-              <a href="tel:+12133522795" class="contact-link">+63 (966) 409-9165</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
-
-              <time datetime="1982-06-23">April 13, 1999</time>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-
-              <address>Binangonan Rizal, Philippines</address>
-            </div>
-
-          </li>
-
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-
-          <li class="social-item">
-            <a href="https://github.com/jmgabriel13" target="_blank" class="social-link">
-              <ion-icon class="socials-icons" name="logo-github"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://www.linkedin.com/in/johnmarkgabriel/" target="_blank" class="social-link">
-              <ion-icon class="socials-icons" name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://www.facebook.com/jmgabriel13/" target="_blank" class="social-link">
-              <ion-icon class="socials-icons" name="logo-facebook"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://www.instagram.com/iamjmmmm/" target="_blank" class="social-link">
-              <ion-icon class="socials-icons" name="logo-instagram"></ion-icon>
-            </a>
-          </li>
-
-        </ul>
-
-      </div>
-
-    </aside>
-
-    <!--
-      - #main-content
-    -->
-
-    <div class="main-content">
-
-      <!--
-        - #NAVBAR
-      -->
-
-      <nav class="navbar">
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li>
-
-        </ul>
-
-      </nav>
-
-      <!--
-        - #ABOUT
-      -->
-
-      <article class="about  active" data-page="about">
-
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-
-        <section class="about-text">
-          <p>
-            Greetings! I'm JM, a Full-Stack developer.
-          </p>
-
-          <p>
-            I am a dedicated Full Stack Developer, driven by a passion for creating resilient and user-centered digital solutions.
-          </p>
-          
-          <p>
-            My expertise spans across server-side development and crafting intuitive user interfaces, 
-            employing diverse technology stacks such as C#, .NET Core, MSSQL, and React/Angular, or MongoDB, Express, React, and NodeJS (MERN).
-          </p>
-
-          <p>
-            I specialize in designing and building applications tailored to user requirements, 
-            leveraging sophisticated Software Architecture and Design principles. 
-            This includes implementing methodologies like Clean Architecture or Vertical Slice Architecture, 
-            embracing concepts such as Domain-Driven Design, and adopting practices like Command and Query Responsibility Segregation (CQRS).
-          </p>
-        </section>
-
-        <!--
-          - my skills
-        -->
-
-        <section class="skills" id="skills">
-
-          <div class="skills-content section-content">
-
-            <h2 class="h3 skills-title">Skills</h2>
-
-            <div class="skills-toggle" data-toggle-box>
-              <button class="toggle-btn active" data-toggle-btn>Skills</button>
-
-              <button class="toggle-btn" data-toggle-btn>Tools</button>
-            </div>
-
-          </div>
-
-          <div class="skills-box" data-skills-box>
-
-            <ul class="skills-list">
-
-              <li>
-                <div class="skill-card">
-                  <div class="tooltip">C#</div>
-
-                  <div class="card-icon">
-                    <img src="./assets/images/csharp_48x48.png" alt="C# logo">
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div class="skill-card">
-                  <div class="tooltip">Dotnet Core</div>
-
-                  <div class="card-icon">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg"
-                      alt="Dotnet Core logo">
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div class="skill-card">
-                  <div class="tooltip">Dotnet</div>
-
-                  <div class="card-icon">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-original.svg"
-                      alt="Dotnet logo">
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div class="skill-card">
-                  <div class="tooltip">HTML5</div>
-
-                  <div class="card-icon">
-                    <img src="./assets/images/html5.png" alt="HTML5 logo">
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div class="skill-card">
-                  <div class="tooltip">CSS3</div>
-
-                  <div class="card-icon">
-                    <img src="./assets/images/css3.png" alt="CSS3 logo">
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div class="skill-card">
-                  <div class="tooltip">Tailwind CSS</div>
-
-                  <div class="card-icon">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
-                      alt="Tailwind CSS logo">
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div class="skill-card">
-                  <div class="tooltip">JavaScript</div>
-
-                  <div class="card-icon">
-                    <img src="./assets/images/javascript.png" alt="JavaScript logo">
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div class="skill-card">
-                  <div class="tooltip">TypeScript</div>
-
-                  <div class="card-icon">
-                    <img src="./assets/images/typescript.png" alt="TypeScript logo">
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div class="skill-card">
-                  <div class="tooltip">NodeJS</div>
-
-                  <div class="card-icon">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg"
-                      alt="NodeJS logo">
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div class="skill-card">
-                  <div class="tooltip">jQuery</div>
-
-                  <div class="card-icon">
-                    <img src="./assets/images/jquery.png" alt="jQuery logo">
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div class="skill-card">
-                  <div class="tooltip">Bootstrap</div>
-
-                  <div class="card-icon">
-                    <img src="./assets/images/bootstrap.png" alt="Bootstrap logo">
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div class="skill-card">
-                  <div class="tooltip">React</div>
-
-                  <div class="card-icon">
-                    <img src="./assets/images/react.png" alt="React logo">
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div class="skill-card">
-                  <div class="tooltip">AngularJS</div>
-
-                  <div class="card-icon">
-                    <img src="./assets/images/angular.png" alt="Angular logo">
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div class="skill-card">
-                  <div class="tooltip">SASS</div>
-
-                  <div class="card-icon">
-                    <img src="./assets/images/sass.png" alt="SASS logo">
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div class="skill-card">
-                  <div class="tooltip">PHP</div>
-
-                  <div class="card-icon">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP logo">
-                  </div>
-                </div>
-              </li>
-
-            </ul>
-
-            <ul class="tools-list">
-
-              <li>
-                <div class="skill-card">
-                  <div class="tooltip">Visual Studio</div>
-
-                  <div class="card-icon">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg"
-                      alt="Visual Studio logo">
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div class="skill-card">
-                  <div class="tooltip">VS Code</div>
-
-                  <div class="card-icon">
-                    <img src="./assets/images/vs-code.png" alt="VS Code logo">
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div class="skill-card">
-                  <div class="tooltip">Ms SQL</div>
-
-                  <div class="card-icon">
-                    <img
-                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain-wordmark.svg"
-                      alt="Ms SQL logo">
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div class="skill-card">
-                  <div class="tooltip">SQLite</div>
-
-                  <div class="card-icon">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original-wordmark.svg"
-                      alt="SQLite logo">
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div class="skill-card">
-                  <div class="tooltip">MySQL</div>
-
-                  <div class="card-icon">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg"
-                      alt="MySQL logo">
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div class="skill-card">
-                  <div class="tooltip">MongoDB</div>
-
-                  <div class="card-icon">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg"
-                      alt="MongoDB logo">
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div class="skill-card">
-                  <div class="tooltip">Git</div>
-
-                  <div class="card-icon">
-                    <img src="./assets/images/git.png" alt="Git logo">
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div class="skill-card">
-                  <div class="tooltip">Npm</div>
-
-                  <div class="card-icon">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg"
-                      alt="Npm logo">
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div class="skill-card">
-                  <div class="tooltip">Command Line</div>
-
-                  <div class="card-icon">
-                    <img src="./assets/images/command.png" alt="Command Line logo">
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div class="skill-card">
-                  <div class="tooltip">Ajax</div>
-                  <div class="card-icon">
-
-                    <img src="./assets/images/ajax.png" alt="Ajax logo">
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div class="skill-card">
-                  <div class="tooltip">Webpack</div>
-
-                  <div class="card-icon">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webpack/webpack-original.svg"
-                      alt="Webpack logo">
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div class="skill-card">
-                  <div class="tooltip">Apache</div>
-
-                  <div class="card-icon">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original.svg"
-                      alt="Apache logo">
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div class="skill-card">
-                  <div class="tooltip">Azure</div>
-
-                  <div class="card-icon">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg"
-                      alt="Azure logo">
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div class="skill-card">
-                  <div class="tooltip">Heroku</div>
-
-                  <div class="card-icon">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-original.svg"
-                      alt="Heroku logo">
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div class="skill-card">
-                  <div class="tooltip">Canva</div>
-
-                  <div class="card-icon">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg"
-                      alt="Canva logo">
-                  </div>
-                </div>
-              </li>
-
-            </ul>
-
-          </div>
-
-          <a class="form-btn" href="assets/cv/JMCV.pdf" download="JMCV.pdf">Downlaod CV</a>
-
-        </section>
-
-      </article>
-
-      <!--
-        - #PORTFOLIO
-      -->
-
-      <article class="portfolio" data-page="portfolio">
-
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
-
-        <section class="projects">
-
-          <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>API</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web App</button>
-            </li>
-
-          </ul>
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>API</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web App</button>
-              </li>
-
-            </ul>
-
-          </div>
-
-          <ul class="project-list">
-
-            <li class="project-item  active" data-filter-item data-category="web app">
-              <a role="button" data-project-item>
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/blog-login.png" alt="blog" loading="lazy" data-project-image-1>
-                  <img src="./assets/images/blog-landing-page.PNG" alt="blog" loading="lazy" data-project-image-2>
-                  <img src="./assets/images/blog-profile-page.PNG" alt="blog" loading="lazy" data-project-image-3>
-                </figure>
-
-                <h3 class="project-title" data-project-title>Blog App</h3>
-                <h2 style="display: none;" data-project-tech>React and Node.js using MERN Stack</h2>
-
-                <p class="project-category">
-                  React and Node.js using MERN Stack
-                </p>
-
-                <p style="display: none;" data-project-details>
-                  A Web App used for posting blogs with some Social Media
-                  functionality, can follow, post, and see post of another user. <br><br>
-
-                  I developed this project for my offshore exam, utilizing the MERN stack to enhance my proficiency in this technology stack. <br><br>
-
-                  <strong>Test credentials: </strong> <br>
-                  <code>
-                    Username: admin <br>
-                    Password: admin <br>
-                  </code>
-                </p>
-
-                <p style="display: none;" data-project-link>https://blog-app-web-dev.vercel.app/login</p>
-                <p style="display: none;" data-project-btn-source-code>https://bitbucket.org/jmgabriel12/blog-app/src/master/</p>
-                <p style="display: none;" data-project-btn-name></p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web app">
-              <a role="button" data-project-item>
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/barangay-assistance-login.PNG" alt="login" loading="lazy"
-                    data-project-image-1>
-                  <img src="./assets/images/barangay-assistance-dashboard.PNG" alt="dashboard" loading="lazy"
-                    data-project-image-2>
-                  <img src="./assets/images/barangay-assistance-form.PNG" alt="form" loading="lazy"
-                    data-project-image-3>
-                </figure>
-
-                <h3 class="project-title" data-project-title>Barangay Assistance Web App</h3>
-                <h2 style="display: none;" data-project-tech>AngularJS</h2>
-
-                <p class="project-category">
-                  AngularJS
-                </p>
-
-                <p style="display: none;" data-project-details>
-                  A system used for Sending Complaints and Assistance online with the use of QR Code that redirect the
-                  User to the website. <br><br>
-
-                  <strong>Unfinished project.</strong> In 2022, I undertook the development of this project to assist a friend with their thesis, 
-                  while also imparting knowledge on project creation to them. Employing C# .NET Core for the API, 
-                  I implemented Clean Architecture principles, complemented by Angular for the frontend. <br><br>
-
-                  <strong>Test credentials: </strong> <br>
-                  <code>
-                    Username: admin <br>
-                    Password: admin <br>
-                  </code>
-                </p>
-
-                <p style="display: none;" data-project-link>https://barangay-assistance-api.azurewebsites.net</p>
-                <p style="display: none;" data-project-btn-source-code>https://github.com/jmgabriel13/barangay-assistance-API/tree/development</p>
-                <p style="display: none;" data-project-btn-name></p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="api">
-              <a role="button" data-project-item>
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/barangay-assistance-api.PNG" alt="login" loading="lazy"
-                    data-project-image-1>
-                </figure>
-
-                <h3 class="project-title" data-project-title>Barangay Assistance API</h3>
-                <h2 style="display: none;" data-project-tech>C# using .NET Core</h2>
-
-                <p class="project-category">
-                  C# using .NET Core
-                </p>
-
-                <p style="display: none;" data-project-details>
-                  A API used used by Barangay Assistance Web App. <br><br>
-
-                  <strong>Unfinished project.</strong> In 2022, I undertook the development of this project to assist a friend with their thesis, 
-                  while also imparting knowledge on project creation to them. Employing C# .NET Core for the API, 
-                  I implemented Clean Architecture principles, complemented by Angular for the frontend. <br><br>
-
-                  <strong>Test credentials: </strong> <br>
-                  <code>
-                    Username: admin <br>
-                    Password: admin <br>
-                  </code>
-                </p>
-
-                <p style="display: none;" data-project-link>https://barangay-assistance-api.azurewebsites.net/swagger/index.html</p>
-                <p style="display: none;" data-project-btn-source-code>https://github.com/jmgabriel13/barangay-assistance-API/tree/development</p>
-                <p style="display: none;" data-project-btn-name></p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web app">
-              <a role="button" data-project-item>
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/custom-pos-transaction-page.PNG" alt="transaction" loading="lazy"
-                    data-project-image-1>
-                  <img src="./assets/images/custom-pos-orders-page.PNG" alt="orders" loading="lazy"
-                    data-project-image-2>
-                </figure>
-
-                <h3 class="project-title" data-project-title>Custom POS</h3>
-                <h2 style="display: none;" data-project-tech>React, MUI and Firebase</h2>
-
-                <p class="project-category">
-                  React, MUI and Firebase
-                </p>
-
-                <p style="display: none;" data-project-details>
-                  A Point of Sale System used for used for Prawning center, the main features is having timer for every order of Rod. <br><br>
-
-                  <strong>Test credentials: </strong> <br>
-                  <code>
-                    Username: 10001 <br>
-                    Password: Admin123!! <br>
-                  </code>
-                </p>
-
-                <p style="display: none;" data-project-link>https://pos-custom.vercel.app/</p>
-                <p style="display: none;" data-project-btn-source-code></p>
-                <p style="display: none;" data-project-btn-name></p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="api">
-              <a role="button" data-project-item>
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/barangay-assistance-api.PNG" alt="login" loading="lazy"
-                    data-project-image-1>
-                </figure>
-
-                <h3 class="project-title" data-project-title>Custom POS API</h3>
-                <h2 style="display: none;" data-project-tech>C# using .NET Core</h2>
-
-                <p class="project-category">
-                  C# using .NET Core
-                </p>
-
-                <p style="display: none;" data-project-details>
-                  A API created for Custom POS Web App. <br><br>
-
-                  <strong>In-progress project.</strong> This is my personal project to practice the implementation of Clean Architecure and DDD
-                  and try to implement as backend of Custom POS Web app. <br><br>
-                  
-                </p>
-
-                <p style="display: none;" data-project-link></p>
-                <p style="display: none;" data-project-btn-source-code>https://github.com/jmgabriel13/pos-api</p>
-                <p style="display: none;" data-project-btn-name></p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web app">
-              <a role="button" data-project-item>
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/TOR.png" alt="tor" loading="lazy" data-project-image-1>
-                  <img src="./assets/images/TOR-cashier.png" alt="tor-cashier" loading="lazy" data-project-image-2>
-                </figure>
-
-                <h3 class="project-title" data-project-title>TOR Web app</h3>
-                <h2 style="display: none;" data-project-tech>AngularJS and C# using ASP.NET MVC</h2>
-
-                <p class="project-category">
-                  AngularJS and C# using ASP.NET MVC
-                </p>
-
-                <p style="display: none;" data-project-details>
-                  A system used for getting/pulling of data from shipping,
-                  offline manifesto and dispatch, approval and rejection of remittance happens in
-                  cashier user <br><br>
-
-                </p>
-
-                <p style="display: none;" data-project-link></p>
-                <p style="display: none;" data-project-btn-source-code></p>
-                <p style="display: none;" data-project-btn-name>Confidential</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web app">
-              <a role="button" data-project-item>
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/CRS.png" alt="crs" loading="lazy" data-project-image-1>
-                </figure>
-
-                <h3 class="project-title" data-project-title>Cash Receipts Web app</h3>
-                <h2 style="display: none;" data-project-tech>AngularJS and C# using ASP.NET MVC</h2>
-
-                <p class="project-category">
-                  AngularJS and C# using ASP.NET MVC
-                </p>
-
-                <p style="display: none;" data-project-details>
-                  A system used by Accounting and Cashiers to
-                  see and tally a result of data of their staff <br><br>
-                </p>
-
-                <p style="display: none;" data-project-link></p>
-                <p style="display: none;" data-project-btn-source-code></p>
-                <p style="display: none;" data-project-btn-name>Confidential</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web app">
-              <a role="button" data-project-item>
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/netwirre.png" alt="netwire" loading="lazy" data-project-image-1>
-                </figure>
-
-                <h3 class="project-title" data-project-title>Netwire Web App</h3>
-                <h2 style="display: none;" data-project-tech>AngularJS and C# using ASP.NET MVC</h2>
-
-                <p class="project-category">
-                  AngularJS and C# using ASP.NET MVC
-                </p>
-
-                <p style="display: none;" data-project-details>
-                  A system used for loading Subscribers and Retailers using 3rd party APIs<br><br>
-                </p>
-
-                <p style="display: none;" data-project-link></p>
-                <p style="display: none;" data-project-btn-source-code></p>
-                <p style="display: none;" data-project-btn-name>Confidential</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web app">
-              <a role="button" data-project-item>
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/PMS.png" alt="pms" loading="lazy" data-project-image-1>
-                </figure>
-
-                <h3 class="project-title" data-project-title>Preventive and Maintenance</h3>
-                <h2 style="display: none;" data-project-tech>AngularJS and C# using ASP.NET MVC</h2>
-
-                <p class="project-category">
-                  AngularJS and C# using ASP.NET MVC
-                </p>
-
-                <p style="display: none;" data-project-details>
-                  A system used for the regular and routine maintenance of equipment and assets. <br><br>
-                </p>
-
-                <p style="display: none;" data-project-link></p>
-                <p style="display: none;" data-project-btn-source-code></p>
-                <p style="display: none;" data-project-btn-name>Confidential</p>
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-        <div class="modal-container" data-modal-container>
-
-          <div class="overlay" data-overlay></div>
-
-          <section class="projects-modal">
-
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="modal-content">
-
-              <div class="modal-img-wrapper">
-                <img src="" alt="" width="80" data-modal-img-1>
-                <img src="" alt="" width="80" data-modal-img-2>
-                <img src="" alt="" width="80" data-modal-img-3>
-              </div>
-
-              <h4 class="h3 projects-title" data-modal-title></h4>
-
-              <time data-modal-tech></time>
-
-              <div>
-                <p data-modal-text>
-
-                </p>
-              </div>
-
-              <form style="display: flex; margin-top: 20px;" action="#" target="_blank" data-modal-link>
-                <a target="_blank" class="form-btn" data-modal-btn-source-code></a>
-                <button class="form-btn" data-modal-btn-name>Live Demo</button>
-              </form>
-
-            </div>
-
-          </section>
-
+      <aside class="profile-card" aria-label="Profile">
+        <img class="profile-photo" src="./assets/images/jm-profile.jpg" alt="JM Gabriel">
+        <div>
+          <h2>JM Gabriel</h2>
+          <p>Full-stack developer focused on practical systems, maintainable architecture, and AI-assisted delivery.</p>
         </div>
+        <ul class="profile-links">
+          <li><a href="mailto:jmgabriel12.jg@gmail.com">jmgabriel12.jg@gmail.com</a></li>
+          <li><a href="https://github.com/jmgabriel13" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/johnmarkgabriel/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li>Rizal, Philippines</li>
+        </ul>
+      </aside>
+    </section>
 
-      </article>
+    <section class="section section-tight" id="work">
+      <div class="section-heading">
+        <p class="eyebrow">Selected Work</p>
+        <h2>Projects framed around real systems, constraints, and technical decisions.</h2>
+      </div>
 
-      <!--
-        - #RESUME
-      -->
-
-      <article class="resume" data-page="resume">
-
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+      <div class="project-grid">
+        <article class="project-card featured">
+          <img src="./assets/images/custom-pos-transaction-page.PNG" alt="Custom POS transaction screen">
+          <div class="project-content">
+            <div class="project-meta">
+              <span>React</span>
+              <span>MUI</span>
+              <span>Firebase</span>
             </div>
-
-            <h3 class="h3">Education</h3>
+            <h3>Custom POS</h3>
+            <p>
+              A point-of-sale application for a pawning workflow, with order tracking and transaction screens designed
+              around branch operations.
+            </p>
+            <ul class="case-points">
+              <li><strong>Problem:</strong> Operators needed a clearer way to track item orders and active transactions.</li>
+              <li><strong>Approach:</strong> Built a focused React interface with structured transaction views and reusable UI components.</li>
+              <li><strong>Next:</strong> Strengthen API integration, test coverage, and deployment documentation.</li>
+            </ul>
+            <div class="card-actions">
+              <a class="text-link" href="https://pos-custom.vercel.app/" target="_blank" rel="noopener">Live demo</a>
+            </div>
           </div>
+        </article>
 
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">University of Rizal System</h4>
-
-              <span>2015 — 2016</span>
-
-              <p class="timeline-text">
-                Bachelor of Science in Electronics and Communication (Shift)
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">University of Manila</h4>
-
-              <span>2016 — 2020</span>
-
-              <p class="timeline-text">
-                Bachelor of Science in Computer Science
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+        <article class="project-card">
+          <img src="./assets/images/barangay-assistance-dashboard.PNG" alt="Barangay assistance dashboard">
+          <div class="project-content">
+            <div class="project-meta">
+              <span>.NET API</span>
+              <span>Dashboard</span>
+              <span>Workflow</span>
             </div>
-
-            <h3 class="h3">Experience</h3>
+            <h3>Barangay Assistance System</h3>
+            <p>
+              A public-service workflow application with login, request forms, dashboards, and list management for local
+              assistance processing.
+            </p>
+            <ul class="case-points">
+              <li><strong>Problem:</strong> Assistance requests need organized capture, review, and operational visibility.</li>
+              <li><strong>Approach:</strong> Modeled the flow around forms, role-based screens, and list-based review.</li>
+            </ul>
           </div>
+        </article>
 
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Facilities IT Admin Intern – STREETCORNER LEDNING CORPORATION (AKULAKU)
-              </h4>
-
-              <span>2019 — 2019</span>
-
-              <p class="timeline-text">
-                - Build an efficient Desktop application that suit to its needs for managing and maintaining records of
-                HR <br>
-                - Helping for setup, troubleshooting and maintaining Servers
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Junior .Net Developer – SDS SOLUTIONS I.T OUTSOURCING, INC </h4>
-
-              <span>2020 — 2022</span>
-
-              <p class="timeline-text">
-                -	Assigned as the assistant developer, and application support for VLI.
-                -	Develop and Design web pages and APIs in C# using ASP.net MVC pattern, HTML, and AngularJS. Integrate third party APIs <br>
-                -	Created console-based background services that executes processes that needs to be in realtime or as scheduled.<br>
-                -	Primary tools used are: C# (webforms, MVC, WebAPI), AngularJS, SQL server.<br>
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">.Net Developer – COLLABERA DIGITAL </h4>
-
-              <span>2022 — Present</span>
-
-              <p class="timeline-text">
-                -	Develop and Design web pages and applications. <br>
-                -	Maintained and enhanced existing web applications and software. <br>
-                -	Creating implementation plan for deployment to Linux based environment. <br>
-                -	Providing guidance (technical direction) to junior engineers on common work packages. <br>
-                -	Designing, coding, testing and installing applications programs up to 75% of the time, 
-                  either in one major program or a range of programs across multiple platforms.<br>
-                -	Preparing and maintaining systems and program documentation.<br>
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-      </article>
-
-      <!--
-        - #CONTACT
-      -->
-
-      <article class="contact" data-page="contact">
-
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
-
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1110.379056163756!2d121.19363327555052!3d14.481076295366606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTTCsDI4JzUxLjkiTiAxMjHCsDExJzQxLjUiRQ!5e1!3m2!1sen!2sph!4v1692279779564!5m2!1sen!2sph"
-              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </figure>
-        </section>
-
-        <section class="contact-form">
-
-          <h3 class="h3 form-title">Contact Form</h3>
-
-          <form action="#" class="form" data-form>
-
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+        <article class="project-card">
+          <img src="./assets/images/barangay-assistance-api.PNG" alt="Custom POS API project screen">
+          <div class="project-content">
+            <div class="project-meta">
+              <span>C#</span>
+              <span>.NET Core</span>
+              <span>Clean Architecture</span>
             </div>
+            <h3>Custom POS API</h3>
+            <p>
+              Backend API practice project for the Custom POS system, focused on Clean Architecture, domain modeling,
+              and maintainable service boundaries.
+            </p>
+            <ul class="case-points">
+              <li><strong>Problem:</strong> The POS frontend needs a backend that can evolve without tightly coupling UI and business rules.</li>
+              <li><strong>Approach:</strong> Used .NET patterns that separate application flow, domain rules, and infrastructure concerns.</li>
+            </ul>
+            <div class="card-actions">
+              <a class="text-link" href="https://github.com/jmgabriel13/pos-api" target="_blank" rel="noopener">Source code</a>
+            </div>
+          </div>
+        </article>
 
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+        <article class="project-card">
+          <img src="./assets/images/TOR.png" alt="TOR web app screen">
+          <div class="project-content">
+            <div class="project-meta">
+              <span>AngularJS</span>
+              <span>ASP.NET MVC</span>
+              <span>SQL</span>
+            </div>
+            <h3>TOR Web App</h3>
+            <p>
+              Confidential operations system for shipping, manifesto, dispatch, and remittance approval workflows.
+            </p>
+            <ul class="case-points">
+              <li><strong>Problem:</strong> Business users needed reliable data movement across operational and cashier workflows.</li>
+              <li><strong>Constraint:</strong> Project details and source are confidential, so the portfolio shows only safe context.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
 
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
+    <section class="section ai-section" id="ai-workflow">
+      <div class="section-heading">
+        <p class="eyebrow">AI Workflow Proof</p>
+        <h2>AI Engineering Workflow Kit</h2>
+        <p>
+          A practical workflow kit for using Codex and Claude Code without letting AI sessions become vague, expensive,
+          or hard to review.
+        </p>
+      </div>
 
-          </form>
+      <div class="workflow-layout">
+        <div class="workflow-card">
+          <h3>The problem</h3>
+          <p>
+            AI coding sessions can lose context, over-generate documentation, ignore architecture rules, or skip review
+            gates. That creates output that looks fast but is hard to trust.
+          </p>
+        </div>
+        <div class="workflow-card">
+          <h3>The approach</h3>
+          <p>
+            Keep instructions short and task-specific: `AGENTS.md` for global behavior, reusable skills for repeated
+            work, and chained workflows for plan, build, test, review, and document cycles.
+          </p>
+        </div>
+        <div class="workflow-card">
+          <h3>The result</h3>
+          <p>
+            More predictable AI output, smaller context payloads, clearer handoffs, and a workflow that still keeps a
+            human engineer responsible for architecture, correctness, and risk.
+          </p>
+        </div>
+      </div>
 
-        </section>
+      <div class="workflow-steps" aria-label="AI workflow chain">
+        <span>Understand</span>
+        <span>Plan</span>
+        <span>Implement</span>
+        <span>Test</span>
+        <span>Review</span>
+        <span>Document</span>
+      </div>
 
-      </article>
+      <a class="btn btn-secondary" href="./workflow-kit/README.md">View workflow kit</a>
+    </section>
 
-    </div>
+    <section class="section" id="strengths">
+      <div class="section-heading">
+        <p class="eyebrow">Technical Strengths</p>
+        <h2>Focused skills for employable .NET and AI-assisted delivery work.</h2>
+      </div>
 
+      <div class="strength-grid">
+        <article>
+          <h3>Core Engineering</h3>
+          <p>C#, .NET Core, ASP.NET MVC/Web API, REST APIs, SQL Server, JavaScript, TypeScript, React, AngularJS.</p>
+        </article>
+        <article>
+          <h3>Architecture & Delivery</h3>
+          <p>Clean Architecture, DDD concepts, CQRS practice, validation boundaries, maintainable services, Git-based delivery.</p>
+        </article>
+        <article>
+          <h3>AI Workflow Engineering</h3>
+          <p>Codex, Claude Code, AGENTS.md, reusable skills, subagent-style delegation, context control, review checklists.</p>
+        </article>
+        <article>
+          <h3>Operational Systems</h3>
+          <p>Business workflows, admin dashboards, data entry systems, reporting support, third-party API integrations.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+      <div class="section-heading">
+        <p class="eyebrow">Experience</p>
+        <h2>Professional background in .NET systems and business application delivery.</h2>
+      </div>
+
+      <div class="timeline">
+        <article>
+          <span>2022 - Present</span>
+          <h3>.NET Developer - Collabera Digital</h3>
+          <p>
+            Develop, maintain, test, and document web applications. Support deployment planning for Linux-based
+            environments and provide technical guidance to junior engineers on common work packages.
+          </p>
+        </article>
+        <article>
+          <span>2020 - 2022</span>
+          <h3>Junior .NET Developer - SDS Solutions I.T Outsourcing, Inc.</h3>
+          <p>
+            Built and maintained web pages, APIs, background services, and integrations using C#, ASP.NET MVC/Web API,
+            AngularJS, and SQL Server.
+          </p>
+        </article>
+        <article>
+          <span>2019</span>
+          <h3>Facilities IT Admin Intern - Streetcorner Lending Corporation</h3>
+          <p>
+            Built a desktop application for HR record management and supported server setup, troubleshooting, and
+            maintenance tasks.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="section-heading">
+        <p class="eyebrow">Contact</p>
+        <h2>Open to .NET full-stack roles, backend/API work, and AI-assisted engineering workflow projects.</h2>
+      </div>
+
+      <div class="contact-grid">
+        <a href="mailto:jmgabriel12.jg@gmail.com">jmgabriel12.jg@gmail.com</a>
+        <a href="https://github.com/jmgabriel13" target="_blank" rel="noopener">github.com/jmgabriel13</a>
+        <a href="https://www.linkedin.com/in/johnmarkgabriel/" target="_blank" rel="noopener">linkedin.com/in/johnmarkgabriel</a>
+        <a href="./assets/cv/JMCV.pdf" target="_blank" rel="noopener">Download resume</a>
+      </div>
+    </section>
   </main>
 
-  <!--
-    - custom js link
-  -->
+  <footer class="site-footer">
+    <p>JM Gabriel - AI-Augmented .NET Full-Stack Developer</p>
+    <a href="#top">Back to top</a>
+  </footer>
+
   <script src="./assets/js/script.js"></script>
-
-  <!--
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
 </body>
 
 </html>

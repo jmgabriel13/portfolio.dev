@@ -1,15 +1,22 @@
-<div align="center">
+# JM Gabriel Portfolio
 
-# JM Gabriel
+Personal portfolio for JM Gabriel, positioned as an AI-augmented .NET Full-Stack Developer.
 
-Greetings! I'm JM, a Full-Stack developer.
+Live site: https://jmgabriel13.github.io/portfolio.dev/
 
-I am a dedicated Full Stack Developer, driven by a passion for creating resilient and user-centered digital solutions.
+## Focus
 
-My expertise spans across server-side development and crafting intuitive user interfaces, employing diverse technology stacks such as C#, .NET Core, MSSQL, and React/Angular, or MongoDB, Express, React, and NodeJS (MERN).
+- C#, .NET, REST APIs, SQL-backed business systems
+- Full-stack delivery with React, AngularJS, JavaScript, and TypeScript
+- AI-assisted engineering workflows using Codex, Claude Code, reusable skills, and concise project instructions
 
-I specialize in designing and building applications tailored to user requirements, leveraging sophisticated Software Architecture and Design principles. This includes implementing methodologies like Clean Architecture or Vertical Slice Architecture, embracing concepts such as Domain-Driven Design, and adopting practices like Command and Query Responsibility Segregation (CQRS).
+## Structure
 
-<a href="https://jmgabriel13.github.io/portfolio.dev/"><strong>➥ Live</strong></a>
+- `index.html` - portfolio content
+- `assets/css/style.css` - responsive visual system
+- `assets/js/script.js` - mobile navigation behavior
+- `workflow-kit/` - proof artifact for AI-assisted engineering workflow design
 
-</div>
+## Local Use
+
+Open `index.html` directly in a browser. No build step is required.
