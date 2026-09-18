@@ -1,316 +1,548 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description"
-    content="JM Gabriel is an AI-augmented .NET Full-Stack Developer building maintainable business systems, APIs, and engineering workflows.">
-  <meta name="author" content="JM Gabriel">
-  <meta property="og:title" content="JM Gabriel | AI-Augmented .NET Full-Stack Developer">
-  <meta property="og:description"
-    content="Maintainable .NET systems, full-stack business applications, and AI-assisted engineering workflows.">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="./assets/images/jm-profile.jpg">
-  <title>JM Gabriel | AI-Augmented .NET Full-Stack Developer</title>
-  <link rel="shortcut icon" href="./assets/images/j-logo-removebg-preview.png" type="image/x-icon">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./assets/css/style.css">
-</head>
-
-<body>
-  <header class="site-header">
-    <a class="brand" href="#top" aria-label="JM Gabriel home">
-      <img src="./assets/images/j-logo-removebg-preview.png" alt="" width="34" height="34">
-      <span>JM Gabriel</span>
-    </a>
-
-    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span class="sr-only">Menu</span>
-    </button>
-
-    <nav class="site-nav" id="site-nav" data-site-nav>
-      <a href="#work">Work</a>
-      <a href="#ai-workflow">AI Workflow</a>
-      <a href="#strengths">Strengths</a>
-      <a href="#experience">Experience</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-
-  <main id="top">
-    <section class="hero section">
-      <div class="hero-copy">
-        <p class="eyebrow">AI-Augmented .NET Full-Stack Developer</p>
-        <h1>I build maintainable .NET business systems and AI-assisted engineering workflows.</h1>
-        <p class="hero-lede">
-          I work across C#, .NET, SQL, APIs, and frontend delivery, then use Codex and Claude Code workflows to make
-          planning, implementation, testing, review, and documentation more consistent.
-        </p>
-
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#work">View Work</a>
-          <a class="btn btn-secondary" href="./assets/cv/JMCV.pdf" target="_blank" rel="noopener">Download Resume</a>
-        </div>
-
-        <dl class="signal-grid" aria-label="Professional summary">
-          <div>
-            <dt>Core stack</dt>
-            <dd>C# / .NET / SQL</dd>
-          </div>
-          <div>
-            <dt>Delivery</dt>
-            <dd>APIs / Web apps / CI-ready workflows</dd>
-          </div>
-          <div>
-            <dt>AI edge</dt>
-            <dd>Codex / Claude Code / reusable skills</dd>
-          </div>
-        </dl>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="JM Gabriel — .NET full-stack developer building thoughtful business systems, APIs, and AI-assisted engineering workflows."
+    />
+    <meta name="author" content="JM Gabriel" />
+    <meta name="theme-color" content="#191b18" />
+    <meta property="og:title" content="JM Gabriel — Systems built with care" />
+    <meta
+      property="og:description"
+      content="Selected work in .NET, full-stack development, and AI-assisted engineering. Based in Rizal, Philippines."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://jmgabriel13.github.io/portfolio.dev/" />
+    <meta
+      property="og:image"
+      content="https://jmgabriel13.github.io/portfolio.dev/assets/images/jm-profile.jpg"
+    />
+    <title>JM Gabriel — .NET Full-Stack Developer</title>
+    <link rel="icon" href="./assets/images/j-logo-removebg-preview.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="./assets/js/script.js" defer></script>
+  </head>
+  <body id="top">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="header-inner shell">
+        <a class="brand" href="#top" aria-label="JM Gabriel home"
+          >jm<span aria-hidden="true">/</span></a
+        >
+        <span class="header-note mono">A developer. A systems thinker.</span>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          data-nav-toggle
+          hidden
+        >
+          <span data-menu-label>Menu</span
+          ><span class="menu-icon" aria-hidden="true"><i></i><i></i></span>
+        </button>
+        <nav class="site-nav" id="site-nav" aria-label="Main navigation" data-site-nav>
+          <a href="#work">Work<span class="nav-index" aria-hidden="true">01</span></a>
+          <a href="#strengths">About<span class="nav-index" aria-hidden="true">02</span></a>
+          <a href="#ai-workflow">Workflow<span class="nav-index" aria-hidden="true">03</span></a>
+          <a class="nav-contact" href="#contact">Let’s talk <span aria-hidden="true">↗</span></a>
+        </nav>
       </div>
+    </header>
 
-      <aside class="profile-card" aria-label="Profile">
-        <img class="profile-photo" src="./assets/images/jm-profile.jpg" alt="JM Gabriel">
-        <div>
-          <h2>JM Gabriel</h2>
-          <p>Full-stack developer focused on practical systems, maintainable architecture, and AI-assisted delivery.</p>
+    <main id="main" tabindex="-1">
+      <section class="hero shell" aria-labelledby="hero-title">
+        <div class="hero-topline mono">
+          <p>.NET full-stack developer / AI-augmented engineer</p>
+          <p class="location">
+            <span class="status-dot" aria-hidden="true"></span>Rizal, Philippines
+          </p>
         </div>
-        <ul class="profile-links">
-          <li><a href="mailto:jmgabriel12.jg@gmail.com">jmgabriel12.jg@gmail.com</a></li>
-          <li><a href="https://github.com/jmgabriel13" target="_blank" rel="noopener">GitHub</a></li>
-          <li><a href="https://www.linkedin.com/in/johnmarkgabriel/" target="_blank" rel="noopener">LinkedIn</a></li>
-          <li>Rizal, Philippines</li>
-        </ul>
-      </aside>
-    </section>
-
-    <section class="section section-tight" id="work">
-      <div class="section-heading">
-        <p class="eyebrow">Selected Work</p>
-        <h2>Projects framed around real systems, constraints, and technical decisions.</h2>
-      </div>
-
-      <div class="project-grid">
-        <article class="project-card featured">
-          <img src="./assets/images/custom-pos-transaction-page.PNG" alt="Custom POS transaction screen">
-          <div class="project-content">
-            <div class="project-meta">
-              <span>React</span>
-              <span>MUI</span>
-              <span>Firebase</span>
-            </div>
-            <h3>Custom POS</h3>
-            <p>
-              A point-of-sale application for a pawning workflow, with order tracking and transaction screens designed
-              around branch operations.
+        <div class="name-row">
+          <h1 id="hero-title">
+            JM GABRIEL<span class="sr-only"> — .NET Full-Stack Developer</span>
+          </h1>
+          <span class="hero-asterisk" aria-hidden="true">✳</span>
+        </div>
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <p class="hero-statement">Good systems.<br /><span>Thoughtfully built.</span></p>
+            <p class="hero-lede">
+              I turn complex business workflows into clear, maintainable software. From .NET APIs to
+              the interfaces people use every day.
             </p>
-            <ul class="case-points">
-              <li><strong>Problem:</strong> Operators needed a clearer way to track item orders and active transactions.</li>
-              <li><strong>Approach:</strong> Built a focused React interface with structured transaction views and reusable UI components.</li>
-              <li><strong>Next:</strong> Strengthen API integration, test coverage, and deployment documentation.</li>
-            </ul>
-            <div class="card-actions">
-              <a class="text-link" href="https://pos-custom.vercel.app/" target="_blank" rel="noopener">Live demo</a>
+            <div class="hero-actions">
+              <a class="button button-accent" href="#work"
+                >Explore my work <span aria-hidden="true">↘</span></a
+              ><a class="inline-link" href="./assets/cv/JMCV.pdf" target="_blank" rel="noopener"
+                >View résumé <span aria-hidden="true">↗</span></a
+              >
             </div>
           </div>
-        </article>
-
-        <article class="project-card">
-          <img src="./assets/images/barangay-assistance-dashboard.PNG" alt="Barangay assistance dashboard">
-          <div class="project-content">
-            <div class="project-meta">
-              <span>.NET API</span>
-              <span>Dashboard</span>
-              <span>Workflow</span>
+          <figure class="portrait">
+            <div class="portrait-frame">
+              <img
+                src="./assets/images/jm-profile.jpg"
+                alt="Portrait of JM Gabriel"
+                width="1014"
+                height="1014"
+                fetchpriority="high"
+              /><span class="portrait-stamp mono">Code with intent.</span>
             </div>
-            <h3>Barangay Assistance System</h3>
-            <p>
-              A public-service workflow application with login, request forms, dashboards, and list management for local
-              assistance processing.
-            </p>
-            <ul class="case-points">
-              <li><strong>Problem:</strong> Assistance requests need organized capture, review, and operational visibility.</li>
-              <li><strong>Approach:</strong> Modeled the flow around forms, role-based screens, and list-based review.</li>
-            </ul>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <img src="./assets/images/barangay-assistance-api.PNG" alt="Custom POS API project screen">
-          <div class="project-content">
-            <div class="project-meta">
-              <span>C#</span>
-              <span>.NET Core</span>
-              <span>Clean Architecture</span>
-            </div>
-            <h3>Custom POS API</h3>
-            <p>
-              Backend API practice project for the Custom POS system, focused on Clean Architecture, domain modeling,
-              and maintainable service boundaries.
-            </p>
-            <ul class="case-points">
-              <li><strong>Problem:</strong> The POS frontend needs a backend that can evolve without tightly coupling UI and business rules.</li>
-              <li><strong>Approach:</strong> Used .NET patterns that separate application flow, domain rules, and infrastructure concerns.</li>
-            </ul>
-            <div class="card-actions">
-              <a class="text-link" href="https://github.com/jmgabriel13/pos-api" target="_blank" rel="noopener">Source code</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <img src="./assets/images/TOR.png" alt="TOR web app screen">
-          <div class="project-content">
-            <div class="project-meta">
-              <span>AngularJS</span>
-              <span>ASP.NET MVC</span>
-              <span>SQL</span>
-            </div>
-            <h3>TOR Web App</h3>
-            <p>
-              Confidential operations system for shipping, manifesto, dispatch, and remittance approval workflows.
-            </p>
-            <ul class="case-points">
-              <li><strong>Problem:</strong> Business users needed reliable data movement across operational and cashier workflows.</li>
-              <li><strong>Constraint:</strong> Project details and source are confidential, so the portfolio shows only safe context.</li>
-            </ul>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="section ai-section" id="ai-workflow">
-      <div class="section-heading">
-        <p class="eyebrow">AI Workflow Proof</p>
-        <h2>AI Engineering Workflow Kit</h2>
-        <p>
-          A practical workflow kit for using Codex and Claude Code without letting AI sessions become vague, expensive,
-          or hard to review.
-        </p>
-      </div>
-
-      <div class="workflow-layout">
-        <div class="workflow-card">
-          <h3>The problem</h3>
-          <p>
-            AI coding sessions can lose context, over-generate documentation, ignore architecture rules, or skip review
-            gates. That creates output that looks fast but is hard to trust.
-          </p>
+            <figcaption>
+              <span>Engineer by craft.<br />Curious by default.</span
+              ><span class="portrait-mark" aria-hidden="true">↙</span>
+            </figcaption>
+          </figure>
         </div>
-        <div class="workflow-card">
-          <h3>The approach</h3>
-          <p>
-            Keep instructions short and task-specific: `AGENTS.md` for global behavior, reusable skills for repeated
-            work, and chained workflows for plan, build, test, review, and document cycles.
-          </p>
+        <div class="hero-bottom mono">
+          <p>C# / .NET / SQL / React</p>
+          <a href="#work">Scroll to discover <span aria-hidden="true">↓</span></a>
+          <p class="hero-bottom-note">Human judgment. AI-assisted delivery.</p>
         </div>
-        <div class="workflow-card">
-          <h3>The result</h3>
-          <p>
-            More predictable AI output, smaller context payloads, clearer handoffs, and a workflow that still keeps a
-            human engineer responsible for architecture, correctness, and risk.
-          </p>
+      </section>
+
+      <section class="work-section shell section-space" id="work" aria-labelledby="work-title">
+        <div class="section-heading" data-reveal>
+          <p class="section-label mono"><span>01 /</span> Selected work</p>
+          <div class="heading-row">
+            <h2 id="work-title">
+              Real problems.<br /><span class="muted">Considered solutions.</span>
+            </h2>
+            <p>
+              A selection of business applications,<br />backend systems, and the thinking behind
+              them.
+            </p>
+          </div>
         </div>
-      </div>
+        <div class="project-grid">
+          <article class="project" data-reveal>
+            <a
+              class="project-visual visual-pos"
+              href="https://pos-custom.vercel.app/"
+              target="_blank"
+              rel="noopener"
+              aria-label="Open Custom POS live demo in a new tab"
+            >
+              <div class="visual-topline mono">
+                <span>Operations / Web application</span><span>01</span>
+              </div>
+              <div class="browser-frame">
+                <div class="browser-bar" aria-hidden="true">
+                  <i></i><i></i><i></i><span>Custom POS</span>
+                </div>
+                <img
+                  src="./assets/images/custom-pos-transaction-page.PNG"
+                  alt="Custom POS transaction interface with order and payment information"
+                  width="1890"
+                  height="808"
+                  loading="lazy"
+                />
+              </div>
+              <span class="visual-link" aria-hidden="true">↗</span>
+            </a>
+            <div class="project-heading">
+              <h3>Custom POS</h3>
+              <span class="mono">React / MUI / Firebase</span>
+            </div>
+            <p class="project-description">
+              A clearer view of orders and transactions, built around the everyday realities of
+              branch operations.
+            </p>
+            <details class="project-details">
+              <summary>Behind the build <span aria-hidden="true">+</span></summary>
+              <div class="details-body">
+                <p>
+                  <strong>The problem.</strong> Operators needed a clearer way to track item orders
+                  and active transactions in a pawning workflow.
+                </p>
+                <p>
+                  <strong>The approach.</strong> A focused React interface with structured
+                  transaction views and reusable UI components.
+                </p>
+                <p>
+                  <strong>Next.</strong> Strengthen API integration, test coverage, and deployment
+                  documentation.
+                </p>
+                <a
+                  class="inline-link"
+                  href="https://pos-custom.vercel.app/"
+                  target="_blank"
+                  rel="noopener"
+                  >Visit live demo <span aria-hidden="true">↗</span></a
+                >
+              </div>
+            </details>
+          </article>
+          <article class="project project-offset" data-reveal>
+            <div class="project-visual visual-assistance">
+              <div class="visual-topline mono">
+                <span>Public service / Workflow</span><span>02</span>
+              </div>
+              <div class="browser-frame">
+                <div class="browser-bar" aria-hidden="true">
+                  <i></i><i></i><i></i><span>Barangay Assistance</span>
+                </div>
+                <img
+                  src="./assets/images/barangay-assistance-dashboard.PNG"
+                  alt="Barangay Assistance dashboard showing assistance requests and operational summaries"
+                  width="1919"
+                  height="930"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div class="project-heading">
+              <h3>Barangay Assistance</h3>
+              <span class="mono">.NET API / Dashboard</span>
+            </div>
+            <p class="project-description">
+              Bringing structure to assistance requests, from the first form to review and
+              operational visibility.
+            </p>
+            <details class="project-details">
+              <summary>Behind the build <span aria-hidden="true">+</span></summary>
+              <div class="details-body">
+                <p>
+                  <strong>The problem.</strong> Local assistance processing needs organized request
+                  capture, review, and visibility.
+                </p>
+                <p>
+                  <strong>The approach.</strong> Login, request forms, role-based screens,
+                  dashboards, and list-based review in the Barangay Assistance System.
+                </p>
+              </div>
+            </details>
+          </article>
+          <article class="project" data-reveal>
+            <a
+              class="project-visual visual-api"
+              href="https://github.com/jmgabriel13/pos-api"
+              target="_blank"
+              rel="noopener"
+              aria-label="View Custom POS API source code on GitHub in a new tab"
+            >
+              <div class="visual-topline mono">
+                <span>Backend / Architecture study</span><span>03</span>
+              </div>
+              <div class="api-wordmark" aria-hidden="true">
+                <span>POS<span class="api-slash">/</span></span
+                ><span>API<span class="api-dot">.</span></span>
+              </div>
+              <div class="api-layers mono">
+                <span>Domain</span><span>Application</span><span>Infrastructure</span>
+              </div>
+              <span class="visual-link" aria-hidden="true">↗</span>
+            </a>
+            <div class="project-heading">
+              <h3>Custom POS API</h3>
+              <span class="mono">C# / .NET Core</span>
+            </div>
+            <p class="project-description">
+              The foundations behind the interface. Exploring domain modeling and maintainable
+              service boundaries.
+            </p>
+            <details class="project-details">
+              <summary>Behind the build <span aria-hidden="true">+</span></summary>
+              <div class="details-body">
+                <p>
+                  <strong>The problem.</strong> A POS frontend needs a backend that can evolve
+                  without tightly coupling the UI and business rules.
+                </p>
+                <p>
+                  <strong>The approach.</strong> A practice project using Clean Architecture to
+                  separate application flow, domain rules, and infrastructure concerns.
+                </p>
+                <a
+                  class="inline-link"
+                  href="https://github.com/jmgabriel13/pos-api"
+                  target="_blank"
+                  rel="noopener"
+                  >Explore source code <span aria-hidden="true">↗</span></a
+                >
+              </div>
+            </details>
+          </article>
+          <article class="project project-offset" data-reveal>
+            <div class="project-visual visual-tor">
+              <div class="visual-topline mono">
+                <span>Business systems / Operations</span><span>04</span>
+              </div>
+              <div class="browser-frame">
+                <div class="browser-bar" aria-hidden="true">
+                  <i></i><i></i><i></i><span>TOR Web App</span>
+                </div>
+                <img
+                  src="./assets/images/TOR.png"
+                  alt="TOR operational web application interface"
+                  width="1883"
+                  height="940"
+                  loading="lazy"
+                />
+              </div>
+              <span class="confidential-note mono">Confidential project</span>
+            </div>
+            <div class="project-heading">
+              <h3>TOR Web App</h3>
+              <span class="mono">AngularJS / ASP.NET / SQL</span>
+            </div>
+            <p class="project-description">
+              Connecting shipping, dispatch, and remittance approvals in a business operations
+              system.
+            </p>
+            <details class="project-details">
+              <summary>Project context <span aria-hidden="true">+</span></summary>
+              <div class="details-body">
+                <p>
+                  <strong>The problem.</strong> Business users needed reliable data movement across
+                  operational and cashier workflows, including shipping, manifesto, dispatch, and
+                  remittance approvals.
+                </p>
+                <p>
+                  <strong>The constraint.</strong> Project details and source are confidential. This
+                  portfolio retains only the existing public overview.
+                </p>
+              </div>
+            </details>
+          </article>
+        </div>
+        <a
+          class="work-footer inline-link"
+          href="https://github.com/jmgabriel13"
+          target="_blank"
+          rel="noopener"
+          >More experiments on GitHub <span aria-hidden="true">↗</span></a
+        >
+      </section>
 
-      <div class="workflow-steps" aria-label="AI workflow chain">
-        <span>Understand</span>
-        <span>Plan</span>
-        <span>Implement</span>
-        <span>Test</span>
-        <span>Review</span>
-        <span>Document</span>
-      </div>
+      <section class="about-section section-space" id="strengths" aria-labelledby="about-title">
+        <div class="shell">
+          <p class="section-label mono"><span>02 /</span> The way I build</p>
+          <div class="about-grid">
+            <div class="about-intro" data-reveal>
+              <h2 id="about-title">
+                Care in the code.<br />Clarity in the<br /><span class="about-emphasis"
+                  >outcome.</span
+                >
+              </h2>
+              <p>
+                I’m JM, a full-stack developer based in Rizal, Philippines. I care about software
+                that makes work simpler—and stays understandable for the next engineer.
+              </p>
+              <a class="inline-link" href="#experience"
+                >My experience <span aria-hidden="true">↓</span></a
+              >
+            </div>
+            <div class="expertise-list" data-reveal>
+              <article>
+                <span class="mono expertise-number">01</span>
+                <div>
+                  <h3>Solid foundations</h3>
+                  <p>
+                    Business rules where they belong. Clear boundaries between the domain,
+                    application, and infrastructure.
+                  </p>
+                  <p class="skill-line mono">C# · .NET · SQL Server · REST APIs</p>
+                </div>
+                <span aria-hidden="true">↗</span>
+              </article>
+              <article>
+                <span class="mono expertise-number">02</span>
+                <div>
+                  <h3>End-to-end thinking</h3>
+                  <p>
+                    From APIs and integrations to dashboards and the interfaces people rely on every
+                    day.
+                  </p>
+                  <p class="skill-line mono">React · AngularJS · JavaScript · TypeScript</p>
+                </div>
+                <span aria-hidden="true">↗</span>
+              </article>
+              <article>
+                <span class="mono expertise-number">03</span>
+                <div>
+                  <h3>Intentional architecture</h3>
+                  <p>
+                    Practical design decisions that keep business systems maintainable as
+                    requirements evolve.
+                  </p>
+                  <p class="skill-line mono">Clean Architecture · DDD concepts · CQRS practice</p>
+                </div>
+                <span aria-hidden="true">↗</span>
+              </article>
+              <article>
+                <span class="mono expertise-number">04</span>
+                <div>
+                  <h3>AI, with an engineer in the loop</h3>
+                  <p>
+                    Reusable instructions, controlled context, and reviewable work. Human judgment
+                    stays at the center.
+                  </p>
+                  <p class="skill-line mono">Codex · Claude Code · Reusable skills</p>
+                </div>
+                <span aria-hidden="true">↗</span>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
 
-      <a class="btn btn-secondary" href="./workflow-kit/README.md">View workflow kit</a>
-    </section>
+      <section
+        class="workflow-section shell section-space"
+        id="ai-workflow"
+        aria-labelledby="workflow-title"
+      >
+        <p class="section-label mono"><span>03 /</span> A better way to work</p>
+        <div class="workflow-grid">
+          <div class="workflow-copy" data-reveal>
+            <span class="small-tag mono">AI Engineering Workflow Kit</span>
+            <h2 id="workflow-title">AI-assisted.<br /><span class="muted">Engineer-led.</span></h2>
+            <p>Speed is useful. Work you can trust is better.</p>
+            <p>
+              I use Codex and Claude Code with short, task-specific instructions, reusable skills,
+              and clear review gates. Architecture, correctness, and risk stay an engineer’s
+              responsibility.
+            </p>
+            <a class="button button-outline" href="./workflow-kit/README.md"
+              >Explore the workflow kit <span aria-hidden="true">↗</span></a
+            >
+          </div>
+          <div class="workflow-sheet" data-reveal>
+            <div class="sheet-header mono">
+              <span>THE PROCESS</span><span aria-hidden="true">[ human + AI ]</span>
+            </div>
+            <ol class="workflow-steps">
+              <li>
+                <span class="mono">01</span>
+                <div>
+                  <h3>Understand & plan</h3>
+                  <p>Read the context. Define the boundaries.</p>
+                </div>
+                <span aria-hidden="true">↘</span>
+              </li>
+              <li>
+                <span class="mono">02</span>
+                <div>
+                  <h3>Implement with intent</h3>
+                  <p>Focused changes. Existing patterns.</p>
+                </div>
+                <span aria-hidden="true">↘</span>
+              </li>
+              <li>
+                <span class="mono">03</span>
+                <div>
+                  <h3>Test & review</h3>
+                  <p>Challenge the output. Verify the behavior.</p>
+                </div>
+                <span aria-hidden="true">↘</span>
+              </li>
+              <li>
+                <span class="mono">04</span>
+                <div>
+                  <h3>Document & hand off</h3>
+                  <p>Keep the reasoning. Leave a clear trail.</p>
+                </div>
+                <span aria-hidden="true">↗</span>
+              </li>
+            </ol>
+            <p class="sheet-footer mono">
+              <span class="status-dot" aria-hidden="true"></span> Human judgment at every step.
+            </p>
+          </div>
+        </div>
+      </section>
 
-    <section class="section" id="strengths">
-      <div class="section-heading">
-        <p class="eyebrow">Technical Strengths</p>
-        <h2>Focused skills for employable .NET and AI-assisted delivery work.</h2>
-      </div>
+      <section
+        class="experience-section shell section-space"
+        id="experience"
+        aria-labelledby="experience-title"
+      >
+        <div class="experience-intro" data-reveal>
+          <p class="section-label mono"><span>04 /</span> Along the way</p>
+          <h2 id="experience-title">Built on<br />experience.</h2>
+          <a class="inline-link" href="./assets/cv/JMCV.pdf" target="_blank" rel="noopener"
+            >View full résumé <span aria-hidden="true">↗</span></a
+          >
+        </div>
+        <div class="timeline" data-reveal>
+          <article>
+            <p class="mono timeline-date">2022 — Present</p>
+            <h3>.NET Developer</h3>
+            <p class="company">Collabera Digital</p>
+            <p>
+              Developing, maintaining, testing, and documenting web applications. Supporting Linux
+              deployment planning and guiding junior engineers on common work packages.
+            </p>
+          </article>
+          <article>
+            <p class="mono timeline-date">2020 — 2022</p>
+            <h3>Junior .NET Developer</h3>
+            <p class="company">SDS Solutions I.T Outsourcing, Inc.</p>
+            <p>
+              Building web pages, APIs, background services, and integrations with C#, ASP.NET
+              MVC/Web API, AngularJS, and SQL Server.
+            </p>
+          </article>
+          <article>
+            <p class="mono timeline-date">2019</p>
+            <h3>Facilities IT Admin Intern</h3>
+            <p class="company">Streetcorner Lending Corporation</p>
+            <p>
+              Building an HR records desktop application and supporting server setup,
+              troubleshooting, and maintenance.
+            </p>
+          </article>
+        </div>
+      </section>
 
-      <div class="strength-grid">
-        <article>
-          <h3>Core Engineering</h3>
-          <p>C#, .NET Core, ASP.NET MVC/Web API, REST APIs, SQL Server, JavaScript, TypeScript, React, AngularJS.</p>
-        </article>
-        <article>
-          <h3>Architecture & Delivery</h3>
-          <p>Clean Architecture, DDD concepts, CQRS practice, validation boundaries, maintainable services, Git-based delivery.</p>
-        </article>
-        <article>
-          <h3>AI Workflow Engineering</h3>
-          <p>Codex, Claude Code, AGENTS.md, reusable skills, subagent-style delegation, context control, review checklists.</p>
-        </article>
-        <article>
-          <h3>Operational Systems</h3>
-          <p>Business workflows, admin dashboards, data entry systems, reporting support, third-party API integrations.</p>
-        </article>
-      </div>
-    </section>
+      <section class="contact-section section-space" id="contact" aria-labelledby="contact-title">
+        <div class="shell">
+          <div class="contact-topline mono">
+            <p>05 / What’s next?</p>
+            <p><span class="status-dot" aria-hidden="true"></span>Open to opportunities</p>
+          </div>
+          <div class="contact-heading" data-reveal>
+            <h2 id="contact-title">Let’s build<br />something <em>good.</em></h2>
+            <a
+              class="contact-arrow"
+              href="mailto:jmgabriel12.jg@gmail.com"
+              aria-label="Email JM Gabriel"
+              ><span aria-hidden="true">↗</span></a
+            >
+          </div>
+          <div class="contact-bottom">
+            <p>
+              Have a .NET role, an API to build, or a workflow to rethink?<br />I’d love to hear
+              about it.
+            </p>
+            <a class="contact-email" href="mailto:jmgabriel12.jg@gmail.com"
+              >jmgabriel12.jg@gmail.com <span aria-hidden="true">↗</span></a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
 
-    <section class="section" id="experience">
-      <div class="section-heading">
-        <p class="eyebrow">Experience</p>
-        <h2>Professional background in .NET systems and business application delivery.</h2>
-      </div>
-
-      <div class="timeline">
-        <article>
-          <span>2022 - Present</span>
-          <h3>.NET Developer - Collabera Digital</h3>
-          <p>
-            Develop, maintain, test, and document web applications. Support deployment planning for Linux-based
-            environments and provide technical guidance to junior engineers on common work packages.
-          </p>
-        </article>
-        <article>
-          <span>2020 - 2022</span>
-          <h3>Junior .NET Developer - SDS Solutions I.T Outsourcing, Inc.</h3>
-          <p>
-            Built and maintained web pages, APIs, background services, and integrations using C#, ASP.NET MVC/Web API,
-            AngularJS, and SQL Server.
-          </p>
-        </article>
-        <article>
-          <span>2019</span>
-          <h3>Facilities IT Admin Intern - Streetcorner Lending Corporation</h3>
-          <p>
-            Built a desktop application for HR record management and supported server setup, troubleshooting, and
-            maintenance tasks.
-          </p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section contact-section" id="contact">
-      <div class="section-heading">
-        <p class="eyebrow">Contact</p>
-        <h2>Open to .NET full-stack roles, backend/API work, and AI-assisted engineering workflow projects.</h2>
-      </div>
-
-      <div class="contact-grid">
-        <a href="mailto:jmgabriel12.jg@gmail.com">jmgabriel12.jg@gmail.com</a>
-        <a href="https://github.com/jmgabriel13" target="_blank" rel="noopener">github.com/jmgabriel13</a>
-        <a href="https://www.linkedin.com/in/johnmarkgabriel/" target="_blank" rel="noopener">linkedin.com/in/johnmarkgabriel</a>
-        <a href="./assets/cv/JMCV.pdf" target="_blank" rel="noopener">Download resume</a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <p>JM Gabriel - AI-Augmented .NET Full-Stack Developer</p>
-    <a href="#top">Back to top</a>
-  </footer>
-
-  <script src="./assets/js/script.js"></script>
-</body>
-
+    <footer class="site-footer shell">
+      <a class="brand" href="#top" aria-label="JM Gabriel, back to top"
+        >jm<span aria-hidden="true">/</span></a
+      >
+      <p class="mono">Thoughtfully built. Always evolving.</p>
+      <nav aria-label="Social links">
+        <a href="https://github.com/jmgabriel13" target="_blank" rel="noopener">GitHub ↗</a
+        ><a href="https://www.linkedin.com/in/johnmarkgabriel/" target="_blank" rel="noopener"
+          >LinkedIn ↗</a
+        ><a href="#top">Back to top ↑</a>
+      </nav>
+    </footer>
+  </body>
 </html>
