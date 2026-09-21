@@ -1,0 +1,77 @@
+{
+  "name": "John Mark DC. Gabriel",
+  "headline": ".NET Full-Stack Developer | Lending Platforms | Developer Tooling",
+  "location": "Rizal, Philippines",
+  "phone": "+63 966 409 9165",
+  "email": "jmgabriel12.jg@gmail.com",
+  "links": [
+    { "label": "Portfolio: jmgabriel13.github.io/portfolio.dev", "url": "https://jmgabriel13.github.io/portfolio.dev/" },
+    { "label": "LinkedIn: johnmarkgabriel", "url": "https://www.linkedin.com/in/johnmarkgabriel/" },
+    { "label": "GitHub: jmgabriel13", "url": "https://github.com/jmgabriel13" }
+  ],
+  "summary": "Full-stack .NET developer working across lending applications, workflow decisioning, and production delivery. Owns changes from implementation and validation through release coordination and production checks. Builds developer tooling and AI-assisted workflows to support delivery, traceability, and accomplishment tracking.",
+  "current_role": {
+    "title": "Mid .NET Developer",
+    "company": "MONEYME | Australian FinTech",
+    "dates": "May 2024 - Present",
+    "bullets": [
+      "Develop and maintain the Horizon lending platform across web applications, services, and databases using C#/.NET, Razor, Vue, jQuery, SQL Server, and Azure Functions.",
+      "Implement lending workflow and decisioning changes, including SQL criteria, data queries, action branches, brand-specific rules, and workflow execution behavior.",
+      "Own release activities for assigned changes: preparation, risk classification, approval coordination, code and database release planning, rollback scripts, QA validation, and post-deployment checks.",
+      "Investigate production and compliance-sensitive behavior by tracing application code and data flows; identify root causes across customer communications, commission processing, and credit-data handling.",
+      "Coordinate stories and epics across application, communications, and infrastructure teams, tracking dependencies, feature flags, pull-request ownership, approvals, and release readiness.",
+      "Build and maintain local Node.js/Express and Vite/React tooling for ticket-linked worktrees, embedded terminals, environment orchestration, delivery-history analysis, and standup preparation; validate tooling with automated tests and negative controls.",
+      "Build accomplishment and KPI evidence tracking, and maintain custom Claude Code skills and specialized agents supporting implementation, validation, pull requests, QA endorsement, release, and production verification."
+    ]
+  },
+  "skills": [
+    { "category": "Backend & data", "items": "C#, .NET, ASP.NET MVC/Web API, SQL Server, Azure Functions, Node.js, Express" },
+    { "category": "Frontend", "items": "Razor, Vue, jQuery, React, JavaScript, TypeScript, AngularJS, HTML, CSS, Vite" },
+    { "category": "Delivery & tooling", "items": "Git, Azure DevOps, Jira, code/database releases, rollback planning, root-cause analysis, Claude Code, Codex" }
+  ],
+  "previous_roles": [
+    {
+      "title": ".NET Developer",
+      "company": "Collabera Digital",
+      "dates": "Feb 2022 - Apr 2024",
+      "bullets": [
+        "Developed, maintained, tested, and documented web applications and software across business requirements.",
+        "Prepared implementation plans for deployment to Linux environments and maintained system and program documentation.",
+        "Provided technical guidance to junior engineers on common work packages."
+      ]
+    },
+    {
+      "title": "Junior .NET Developer",
+      "company": "SDS Solutions I.T Outsourcing, Inc.",
+      "dates": "Sep 2020 - Feb 2022",
+      "bullets": [
+        "Developed web pages and APIs with C#, ASP.NET MVC/Web API, AngularJS, and SQL Server; integrated third-party APIs and supported client applications.",
+        "Created console-based background services for scheduled and near-real-time processing."
+      ]
+    },
+    {
+      "title": "Facilities IT Admin Intern",
+      "company": "Streetcorner Lending Corporation (Akulaku)",
+      "dates": "Apr 2019 - Jun 2019",
+      "bullets": [
+        "Built a desktop application for HR records management and assisted with server setup, troubleshooting, and maintenance."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Loan Quote Calculator | ASP.NET Core, React, TypeScript, SQL",
+      "url": "https://github.com/jmgabriel13/MoneyMeChallenge",
+      "description": "Public coding-challenge project covering lending quotes, interest, and fees with separate domain, application, infrastructure, and web layers. Includes focused calculation and handler tests."
+    },
+    {
+      "name": "Custom POS API | C#, .NET Core",
+      "url": "https://github.com/jmgabriel13/pos-api",
+      "description": "Practice backend using Clean Architecture to separate POS application flow, domain rules, and infrastructure concerns."
+    }
+  ],
+  "education": {
+    "degree": "Bachelor of Science in Computer Science",
+    "details": "The University of Manila | 2016 - 2020"
+  }
+}

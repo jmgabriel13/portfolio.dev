@@ -407,6 +407,9 @@ h2 {
 .project-offset {
   margin-top: 92px;
 }
+.project {
+  min-width: 0;
+}
 .project-visual {
   position: relative;
   display: flex;
@@ -562,6 +565,9 @@ a.project-visual:hover .visual-link {
 .api-slash,
 .api-dot {
   color: #45533c;
+}
+.visual-poiesis .api-wordmark {
+  font-size: 52px;
 }
 .api-layers {
   display: flex;

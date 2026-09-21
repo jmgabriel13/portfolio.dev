@@ -1,8 +1,9 @@
 # JM Gabriel Portfolio
 
-Personal portfolio for JM Gabriel, an AI-augmented .NET Full-Stack Developer.
+Personal portfolio for JM Gabriel, a .NET Full-Stack Developer working across
+lending platforms, production releases, investigations, and developer tooling.
 An editorial layout brings together selected business systems, technical strengths,
-professional experience, and an AI engineering workflow kit.
+professional experience, and a public AI engineering workflow kit.
 
 Production site: https://jmgabriel13.github.io/portfolio.dev/
 
@@ -20,6 +21,8 @@ local preview. The production site changes only through the existing deployment 
 - `assets/js/script.js` — progressive navigation and optional entrance animations
 - `assets/images/` — existing portrait and project screenshots
 - `assets/cv/JMCV.pdf` — résumé
+- `assets/cv/resume.json` — editable résumé content
+- `assets/cv/build_resume.py` — PDF generator (Python + ReportLab; development only)
 - `workflow-kit/` — proof artifact for AI-assisted engineering workflow design
 - `_bmad-output/implementation-artifacts/spec-portfolio-redesign.md` — approved scope, validation, and review order
 
@@ -41,6 +44,13 @@ under `/portfolio.dev/`. Google Fonts are optional external requests with system
 font fallbacks. The contact links use the visitor's email client; there is no form backend.
 
 ## Verification
+
+To rebuild the résumé after confirming employment details, install ReportLab in
+your Python environment and run `python assets/cv/build_resume.py`. The generator
+replaces `assets/cv/JMCV.pdf`, preserving the portfolio's existing résumé links.
+Inspect both rendered pages and extracted text before publishing. Missing employer
+or date fields stop generation so incomplete employment details cannot overwrite
+the published PDF. The website itself still requires no dependencies or build step.
 
 Run `node --check assets/js/script.js` for a syntax check. For browser verification:
 
