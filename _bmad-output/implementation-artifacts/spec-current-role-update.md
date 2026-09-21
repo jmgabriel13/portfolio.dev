@@ -38,6 +38,9 @@ source. Do not publish private identifiers or infer quantified business impact.
 - Public positioning uses Software Engineer with .NET and full-stack specialization.
   The MONEYME entry explicitly retains Mid .NET Developer as the official title.
   AI-assisted tooling is described in the work content rather than used as a job title.
+- Rebuilt `assets/cv/JMCV.pdf` from the preserved original one-page template so the
+  visual identity remains consistent with the prior CV. Updated text is overlaid into
+  the original two-column design; original link annotations were removed to avoid visible boxes.
 
 ## Progress and validation
 

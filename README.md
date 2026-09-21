@@ -22,7 +22,8 @@ local preview. The production site changes only through the existing deployment 
 - `assets/images/` — existing portrait and project screenshots
 - `assets/cv/JMCV.pdf` — résumé
 - `assets/cv/resume.json` — editable résumé content
-- `assets/cv/build_resume.py` — PDF generator (Python + ReportLab; development only)
+- `assets/cv/build_resume.py` — PDF generator that keeps the original one-page layout (Python + ReportLab; development only)
+- `assets/cv/template-original.pdf` — preserved original visual template used by the generator
 - `workflow-kit/` — proof artifact for AI-assisted engineering workflow design
 - `_bmad-output/implementation-artifacts/spec-portfolio-redesign.md` — approved scope, validation, and review order
 
@@ -47,7 +48,8 @@ font fallbacks. The contact links use the visitor's email client; there is no fo
 
 To rebuild the résumé after confirming employment details, install ReportLab in
 your Python environment and run `python assets/cv/build_resume.py`. The generator
-replaces `assets/cv/JMCV.pdf`, preserving the portfolio's existing résumé links.
+uses the preserved original one-page template and replaces `assets/cv/JMCV.pdf`,
+preserving the portfolio's existing résumé links.
 Inspect both rendered pages and extracted text before publishing. Missing employer
 or date fields stop generation so incomplete employment details cannot overwrite
 the published PDF. The website itself still requires no dependencies or build step.
