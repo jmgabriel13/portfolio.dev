@@ -1,6 +1,6 @@
 {
   "name": "John Mark DC. Gabriel",
-  "headline": ".NET Full-Stack Developer | Lending Platforms | Developer Tooling",
+  "headline": "Software Engineer | .NET & Full-Stack Development",
   "location": "Rizal, Philippines",
   "phone": "+63 966 409 9165",
   "email": "jmgabriel12.jg@gmail.com",
@@ -9,9 +9,9 @@
     { "label": "LinkedIn: johnmarkgabriel", "url": "https://www.linkedin.com/in/johnmarkgabriel/" },
     { "label": "GitHub: jmgabriel13", "url": "https://github.com/jmgabriel13" }
   ],
-  "summary": "Full-stack .NET developer working across lending applications, workflow decisioning, and production delivery. Owns changes from implementation and validation through release coordination and production checks. Builds developer tooling and AI-assisted workflows to support delivery, traceability, and accomplishment tracking.",
+  "summary": "Software engineer specializing in .NET and full-stack development across lending applications, workflow decisioning, and production delivery. Owns changes from implementation and validation through release coordination and production checks. Builds developer tooling and AI-assisted workflows to support delivery, traceability, and accomplishment tracking.",
   "current_role": {
-    "title": "Mid .NET Developer",
+    "title": "Software Engineer (official title: Mid .NET Developer)",
     "company": "MONEYME | Australian FinTech",
     "dates": "May 2024 - Present",
     "bullets": [

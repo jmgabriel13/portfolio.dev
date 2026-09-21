@@ -1,6 +1,6 @@
 # JM Gabriel Portfolio
 
-Personal portfolio for JM Gabriel, a .NET Full-Stack Developer working across
+Personal portfolio for JM Gabriel, a Software Engineer specializing in .NET and full-stack development across
 lending platforms, production releases, investigations, and developer tooling.
 An editorial layout brings together selected business systems, technical strengths,
 professional experience, and a public AI engineering workflow kit.

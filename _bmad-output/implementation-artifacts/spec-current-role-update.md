@@ -35,6 +35,9 @@ source. Do not publish private identifiers or infer quantified business impact.
 - Preserve earlier experience, education, and contact details from the existing resume.
 - Resume and timeline now use the confirmed title, company label, and employment dates.
   The generator refuses missing employer or date fields before writing the PDF.
+- Public positioning uses Software Engineer with .NET and full-stack specialization.
+  The MONEYME entry explicitly retains Mid .NET Developer as the official title.
+  AI-assisted tooling is described in the work content rather than used as a job title.
 
 ## Progress and validation
 
