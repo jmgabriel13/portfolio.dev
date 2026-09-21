@@ -30,6 +30,8 @@ source. Do not publish private identifiers or infer quantified business impact.
   and invented savings or impact metrics. Describe tooling as supporting the user's workflow.
 - Keep internal tool names, ticket IDs, repository paths, and incident implementation
   details out of public copy. Public project descriptions remain based on existing site content.
+- Use descriptive terms for internal platforms in public career material; the user
+  clarified that internal platform names should also be omitted. Use "MONEYME's lending platform".
 - Preserve earlier experience, education, and contact details from the existing resume.
 - Resume and timeline now use the confirmed title, company label, and employment dates.
   The generator refuses missing employer or date fields before writing the PDF.

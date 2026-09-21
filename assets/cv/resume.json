@@ -15,7 +15,7 @@
     "company": "MONEYME | Australian FinTech",
     "dates": "May 2024 - Present",
     "bullets": [
-      "Develop and maintain the Horizon lending platform across web applications, services, and databases using C#/.NET, Razor, Vue, jQuery, SQL Server, and Azure Functions.",
+      "Develop and maintain MONEYME's lending platform across web applications, services, and databases using C#/.NET, Razor, Vue, jQuery, SQL Server, and Azure Functions.",
       "Implement lending workflow and decisioning changes, including SQL criteria, data queries, action branches, brand-specific rules, and workflow execution behavior.",
       "Own release activities for assigned changes: preparation, risk classification, approval coordination, code and database release planning, rollback scripts, QA validation, and post-deployment checks.",
       "Investigate production and compliance-sensitive behavior by tracing application code and data flows; identify root causes across customer communications, commission processing, and credit-data handling.",
